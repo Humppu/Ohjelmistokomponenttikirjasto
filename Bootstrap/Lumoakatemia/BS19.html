@@ -6,17 +6,16 @@
     initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-    <title>Näyttää tekstin vain isoilla ja keskikokoisilla näytöillä</title>
+    <title>Navigointipalkki jossa otsikko keskellä(navbar)</title>
 </head>
 <body>
-    <div class="d-none d-md-block">
-        Näkyy keskikokoisilla ja suuremmilla näytöillä
-    </div>       
-    
-    <div class="d-sm-none">
-        Näkyy pienillä näytöillä. 
-    </div>               
-                        
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+        <div class="container">
+            <div class="mx-auto">
+            <a class="navbar-brand" href="#">Keskitetty otsikko</a>
+            </div>
+        </div>
+    </nav>
     <script src="path/to/bootstrap.bundle.min.js"></script>
 </body>
-</html>               
+</html>                        
