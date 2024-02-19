@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <meta charset="8">
+    <meta name="viewport" content="width=device-width">
+
+    <title>
+        Jos tekstiruudun sisältö on muuttunut, sen tunnistaminen jQueryn avulla
+    </title>
+</head>
+
+<body>
+    <form action="demo_form.asp">
+        Etunimi: <input type="text" id="eka" name="fname"><br>
+        Sukunimi: <input type="text" id="toka" name="lname"><br>
+        <input type="submit" value="Submit">
+    </form>
+
+
+    <script>
+            $(document).ready(function () {
+
+            $("#eka").on("input", function () {
+                console.log("Uusi etunimi annettu!");
+            });
+
+            $("#toka").on("input", function () {
+                console.log("Uusi sukunimi annettu!");
+            });
+        });
+    </script>
+</body>
+</html>

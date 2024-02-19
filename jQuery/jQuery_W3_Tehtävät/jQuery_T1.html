@@ -1,0 +1,23 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+	
+	<meta charset="8">
+	<title>Testi onko jQuery asennettu</title>
+</head>
+<body>
+	<p>Klikkaa tästä</p>
+
+	<script>
+        $("p").bind("click", function () {
+            $("body").append("Tämä on yhden klikkauksen tapahtuma");
+        });
+
+        $("p").bind("dblclick", function () {
+            $("body").append("Tämä on tupla klikkauksen tapahtuma");
+        });
+	</script>
+</body>
+
+</html> 

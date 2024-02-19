@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("tr:odd").addClass("zebra");});
+    </script>
+    <style>
+        .tyyli {
+            width: 500px;
+            margin: 0px auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+            table tr td {
+                width: 50%;
+                border: 2px solid #ff0000;
+                padding: 5px;
+            }
+
+            table tr th {
+                border: 2px solid #000000;
+                padding: 5px;
+            }
+
+        .zebra {
+            background-color: #808080;
+        }
+    </style>
+    <meta charset="8">
+    <title>Zebra Stripes taulukkotehosteen luominen</title>
+</head>
+<body>
+    <div class="tyyli">
+        <table>
+            <tr>
+                <th>Oppilaan nimi</th>
+                <th>Pisteet</th>
+            </tr>
+            <tr>
+                <td>Homam</td>
+                <td>89.00</td>
+            </tr>
+            <tr>
+                <td>Saila</td>
+                <td>80.00</td>
+            </tr>
+            <tr>
+                <td>Matti</td>
+                <td>90.00</td>
+            </tr>
+            <tr>
+                <td>Heikki</td>
+                <td>89.00</td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+</html>

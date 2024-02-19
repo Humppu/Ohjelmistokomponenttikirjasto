@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+
+    
+    <meta charset="8">
+    <title>Lihavoi kaikkien elementtien ensimmäisen sanan</title>
+</head>
+<body>
+    <p>PHP Harjoitukset</p>
+    <p>Python Harjoitukset</p>
+    <p>JavaScript Harjoitukset</p>
+    <p>jQuery Harjoitukset</p>
+    <script>
+        $("p").each(function () {
+            var pdata = $(this);
+            pdata.html(pdata.text().replace(/^(\S+)/, '<strong>$1</strong>'));
+        });
+</script>
+</body>
+</html>

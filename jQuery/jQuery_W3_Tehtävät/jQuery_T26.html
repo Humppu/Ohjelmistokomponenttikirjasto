@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <meta charset="8">
+    <meta name="viewport" content="width=device-width">
+
+    <title>
+        Elementin absoluuttisen sijainnin selvittäminen jQueryn avulla
+    </title>
+</head>
+
+<body>
+    <form id="form" action="sample.php">
+        Etunimi: <br>
+        <input type="text" id="eka" name="enimi" value="Homam">
+        <br>
+        Sukunimi: <br>
+        <input type="text" id="toka" name="snimi" value="Al-mehsen">
+        <br><br>
+        <input type="submit" value="Lähetä">
+    </form>
+   
+
+    <script>
+        $(document).ready(function () {
+            var left_position = $("#eka").offset().left - $(document).scrollTop();
+            console.log("Vasen: " + left_position);
+
+            var top_position = $("#toka").offset().top - $(document).scrollTop();
+            console.log("Oikea: " + top_position);
+        }
+
+    </script>
+</body>
+</html>

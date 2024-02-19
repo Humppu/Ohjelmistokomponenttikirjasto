@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <meta charset="8">
+    <meta name="viewport" content="width=device-width">
+    <title>
+        Poista kaikki valintaruudun asetukset ja lis‰‰ sitten yksi vaihtoehto ja valitse se jQueryll‰
+    </title>
+</head>
+<body>
+    <select id="Varit">
+        <option value="Red">Red</option>
+        <option value="Blue">Blue</option>
+        <option value="Green">Green</option>
+    </select>
+    <input type="button" value="Klikkaa poistaksesi kaikki valinnat" onclick="PoistaValinnat()" />
+
+    <script>
+        function PoistaValinnat() {
+            $("#Varit")
+                .empty()
+                .append('<option selected="selected" value="Black">Black</option>');
+        }
+    </script>
+</body>
+</html>

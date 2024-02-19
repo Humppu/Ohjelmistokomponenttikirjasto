@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <meta charset="8">
+    <meta name="viewport" content="width=device-width">
+    
+    <title>
+        Tarkistaa onko objekti jQuery-objekti.
+    </title>
+</head>
+<body>
+    <script>
+        var obj1 = { what: "Tavallinen JS objekti" },
+            obj2 = $("body");
+
+        if (obj1.jquery) {
+            console.log("objekti on jQuery objekti");
+        }
+
+        if (obj2.jquery) {
+            console.log("objekti kaksi on jQuery objekti");
+        }
+    </script>
+</body>
+</html>

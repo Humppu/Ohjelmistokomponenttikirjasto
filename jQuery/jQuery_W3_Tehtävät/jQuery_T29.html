@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <meta charset="8">
+    <meta name="viewport" content="width=device-width">
+
+    <title>
+        Poista tietty arvo taulukosta jQueryn avulla
+    </title>
+</head>
+
+<body>
+    <script>
+        var t = ["Sininen", " Keltainen ", " Musta", " Turkoosi", " Oranssi"];
+        var remove_Item = " Turkoosi";
+
+        console.log("Taulukko ennen elementin poistoa = " + t);
+
+
+        t = $.grep(t, function (value) {
+            return value != remove_Item;
+        });
+
+        console.log("Taulukko elementin poiston jälkeen = " + t);   
+    </script>
+</body>
+</html>

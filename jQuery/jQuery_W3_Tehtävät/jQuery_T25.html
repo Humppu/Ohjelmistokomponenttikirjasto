@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <meta charset="8">
+    <meta name="viewport" content="width=device-width">
+
+    <title>
+     Lomakkeen syöttökenttien käyttäminen jQueryn avulla
+    </title>
+</head>
+
+<body>
+    <form id="form" action="sample.php">
+        Etunimi: <br>
+        <input type="text" name="enimi" value="Homam">
+        <br>
+        Sukunimi: <br>
+        <input type="text" name="snimi" value="Al-mehsen">
+        <br><br>
+        <input type="submit" value="Lähetä">
+    </form>
+    <p> Napsauta lähetä painiketta saadaksesi kaikki lomake elementit ja niiden arvot</p>
+
+    <script>
+        $("#form").submit(function (event) {
+            event.preventDefault();
+
+            var arvot = $(this).serialize();
+            console.log(arvot);
+        });
+
+    </script>
+</body>
+</html>
